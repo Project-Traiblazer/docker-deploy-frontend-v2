@@ -17,6 +17,6 @@ COPY nginx-custom.conf /etc/nginx/conf.d/default.conf
 
 COPY --from=build-stage /app/dist /usr/shre/nginx/html
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD [ "nginx", "-g", "daemon off;" ]
