@@ -1,0 +1,7 @@
+services:
+  frontend:
+    image: hrmstrailblazer/234-deploylab-frontend:latest
+    pull-policy: always
+    ports:
+      - "8081:80"
+    restart: unless-stopped
