@@ -2,8 +2,8 @@
 set -e
 
 # 1. Fixed the missing '-' in VITE_SERVER_URI
-VITE_GRAPHQL_URI="${VITE_GRAPHQL_URI:-http://54.242.11.175:8082/graphql}"
-VITE_SERVER_URI="${VITE_SERVER_URI:-http://54.242.11.175:8082}"
+VITE_GRAPHQL_URI="${VITE_GRAPHQL_URI:-http://54.197.53.201:8082/graphql}"
+VITE_SERVER_URI="${VITE_SERVER_URI:-http://54.197.53.201:8082}"
 
 # 2. Fixed the 'find' syntax and separated the commands properly
 find /usr/share/nginx/html/assets -name '*.js' -exec sed -i "s|__VITE_GRAPHQL_URI_PLACEHOLDER__|${VITE_GRAPHQL_URI}|g" {} +

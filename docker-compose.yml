@@ -5,3 +5,6 @@ services:
     ports:
       - "8081:8080"
     restart: unless-stopped
+    environment:
+      - VITE_GRAPHQL_URI=http://54.197.53.201:8082/graphql
+      - VITE_SERVER_URI=http://54.197.53.201:8082
