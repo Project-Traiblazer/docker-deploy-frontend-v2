@@ -1,0 +1,10 @@
+services:
+  frontend:
+    image: hrmstrailblazer/234-deploylab-frontend:latest
+    pull_policy: always
+    ports:
+      - "8091:8080"
+    environment:
+      - VITE_GRAPHQL_URI=http://54.197.53.201:8092/graphql
+      - VITE_SERVER_URI=http://54.197.53.201:8092
+    restart: unless-stopped
